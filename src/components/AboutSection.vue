@@ -3,7 +3,7 @@
         <div class="absolute z-0 top-[93rem] inset-x-0 h-64 flex items-start">
             <div class="h-24 w-64 bg-gradient-to-br from-primary via-secondary blur-2xl to-[#570cac] opacity-20"></div>
         </div>
-        <div class="md:grid md:grid-cols-2 gap-8 items-center px-4 xl:gap-16 sm:py-16 xl:px-16 z-1">
+        <div class="container mx-auto md:grid md:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 z-1">
             <div data-aos="flip-right">
                 <div class="absolute top-0 inset-x-0 h-64 flex items-start">
                     <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl invisible opacity-40"></div>

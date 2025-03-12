@@ -4,7 +4,7 @@
             <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl invisible opacity-40"></div>
             <div class="h-20 w-3/5 bg-gradient-to-r from-[#670ccf] opqcity-40 blur-2xl"></div>
         </div>
-        <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
+        <div class="container mx-auto relative">
             <div
                 class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
@@ -23,9 +23,9 @@
                         delivering scalable and efficient
                         solutions.
                     </p>
-                    <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
+                    <div class="pt-9 flex-col sm:w-max sm:mx-auto lg:mx-0 md:w-fit">
                         <a href="Liyan-Resume.pdf" download="Liyan-Resume.pdf"
-                            class="border-[1px] border-primary relative z-20 overflow-hidden text-primary bg-primary-white cursor-pointer flex gap-1 justify-center items-baseline m-auto mt-6 rounded-[32px] px-4 py-2" >
+                            class="border-[1px] border-primary relative z-20 overflow-hidden text-primary bg-primary-white cursor-pointer flex gap-1 justify-center md:justify-start items-baseline mt-6 rounded-[32px] px-4 py-2" >
                             Download resume
                             <div
                             class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">

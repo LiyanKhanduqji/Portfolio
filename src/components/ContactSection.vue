@@ -1,14 +1,8 @@
 <template>
     <section class="text-white mt-20" id="contact">
-        <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
-        <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
+        <h2 class="container mx-auto text-4xl font-bold text-white text-left mb-4">Get in Touch</h2>
+        <div class="container mx-auto grid md:grid-cols-2 gap-4 relative mt-8" data-aos="zoom-in-up">
             <div>
-                <p class="text-[#adb7be]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
-                    quibusdam officia at,
-                    a quis cumque ea aperiam omnis minima quam. Modi necessitatibus odit corporis at dolorem quae iusto
-                    aliquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, porro!
-                </p>
                 <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
                     <div class="flex mb-10 items-center">
                         <div class="p-2"

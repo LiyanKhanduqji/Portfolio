@@ -1,6 +1,6 @@
 <template>
     <header 
-        :class="['flex justify-between items-center p-6 bg-opacity-50 relative z-20 transition-all duration-1000 ease-in-out',
+        :class="['flex justify-between items-center container mx-auto py-6 bg-opacity-50 relative z-20 transition-all duration-1000 ease-in-out',
             showHeader ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10']"
     >
         <!-- Mobile Toggle Button -->
