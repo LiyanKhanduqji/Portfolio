@@ -62,7 +62,7 @@ AOS.init();
 .typewriter h1 {
     color: #fff;
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid #D60638;
     white-space: nowrap;
     margin: 0 auto;
     animation:
@@ -102,7 +102,7 @@ a::after {
     content: "";
     width: 12px;
     height: 12px;
-    background-color: #f59e0b;
+    background-color: #D60638;
     position: absolute;
     border-radius: 50%;
     top: 50%;
