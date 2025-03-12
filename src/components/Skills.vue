@@ -6,7 +6,7 @@
                     <img :src="svgPath.path" :alt="svgPath.alt" class="w-8 mx-auto" />
                 </div>
                 <div class="w-28">
-                    <p class="text-[#fff] text-lg pt-3 text-center">{{ svgPath.alt }}</p>
+                    <p class="text-[#fff] md:text-lg md:block hidden pt-3 text-center">{{ svgPath.alt }}</p>
                 </div>
             </div>
         </div>

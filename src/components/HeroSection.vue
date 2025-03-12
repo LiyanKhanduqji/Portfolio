@@ -10,11 +10,12 @@
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left typewriter">
                         <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Hi, I'm <span
+                            <span
                                 class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#3a86ff]">
-                                Liyan
+                                Liyan Khanduqji
                             </span>
                         </h1>
+                        <p class="text-secondary">Frontend Developer</p>
                     </div>
                     <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
                         Frontend developer with experience building dynamic, responsive web applications using Vue.js.
@@ -42,7 +43,7 @@
                             class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl">
                         </div>
                         <div
-                            class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 rounded-full shadow-lg border border-primary">
+                            class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 rounded-full shadow-lg border border-primary">
                             <img src="@/assets/Liyan.jpeg" alt="Hero pic" width="500" height="auto" loading="lazy"
                                 class="w-full h-full rounded-full object-cover">
                         </div>
@@ -59,8 +60,7 @@ AOS.init();
 </script>
 
 <style scoped>
-.typewriter h1 {
-    color: #fff;
+.typewriter p {
     overflow: hidden;
     border-right: .15em solid #D60638;
     white-space: nowrap;
@@ -95,6 +95,16 @@ AOS.init();
 a {
     z-index: 1;
     transition: 0.3;
+    animation: bounce 1s infinite; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
 }
 
 a::before,

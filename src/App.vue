@@ -23,7 +23,7 @@ const BackToTop = defineAsyncComponent(() => import('@/components/BackToTop.vue'
       <LatestProjects />
       <ContactSection />
       <Footer />
-      <BackToTop/>
+      <BackToTop />
     </div>
   </div>
 </template>

@@ -13,17 +13,18 @@
                 </h2>
                 <Skills />
             </div>
-            <div data-aos="flip-left">
-                <h2 class="text-4xl font-bold text-white text-left mb-8 md:text-center md:mt-0 mt-8">My Experiences</h2>
-                <div class="space-y-8 py-8">
+            <div data-aos="flip-left" class="mt-8">
+                <h2 class="text-start text-4xl font-bold text-white mb-8 md:mt-0 mt-8">My Experiences</h2>
+                <div class="py-8 flex items-center justify-center gap-2 flex-wrap mt-8">
                     <div v-for="element in Experinces" :key="element.id"
-                        class="flex items-center rounded-xl p-4 bg-[#111a3e] shadow-lg border border-[#1f1641] max-w-full">
-                        <div class="w-1/4">
-                            <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="lawyer">
+                        class="flex items-center rounded-xl p-4 shadow-lg border-2 border-secondary md:w-[49%] bg-dark" data-aos="fade-down-right">
+                        <div class="relative overflow-hidden rounded-full w-20 h-20 flex items-center justify-center">
+                            <img :src="element.logo" alt="lawyer" class="absolute w-fit" width="20" height="20"
+                                :class="{ 'w-[49px]': element.id === 2 }">
                         </div>
                         <div class="w-3/4 pl-4">
                             <h3
-                                class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                                class="text-2xl font-semibold text-white">
                                 {{ element.role }}
                             </h3>
                             <p class="text-white">{{ element.company }}</p>
@@ -44,15 +45,17 @@ const Skills = defineAsyncComponent(() => import('@/components/Skills.vue'));
 const Experinces = ref([
     {
         id: 1,
-        role: 'Software Engineer',
-        company: 'Microsoft',
-        date: 'Mar 2023 - September 2024'
+        logo: "chain.png",
+        role: 'Software Engineer Intern',
+        company: 'Chain Reaction',
+        date: 'Nov 2023 - Feb 2024'
     },
     {
         id: 2,
+        logo: "evo.png",
         role: 'Frontend Developer',
-        company: 'Spotify',
-        date: 'Mar 2022 - September 2023'
+        company: 'Evokey',
+        date: 'Feb 2024 - Mar 2025'
     },
 ])
 </script>
