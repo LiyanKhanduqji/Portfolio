@@ -9,9 +9,9 @@
                 class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left typewriter">
-                        <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#3a86ff]">
+                        <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl" data-aos="zoom-out"
+                            data-aos-delay="200">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#3a86ff]">
                                 Liyan Khanduqji
                             </span>
                         </h1>
@@ -25,14 +25,14 @@
                     </p>
                     <div class="pt-9 flex-col sm:w-max sm:mx-auto lg:mx-0 md:w-fit">
                         <a href="Liyan-Resume.pdf" download="Liyan-Resume.pdf"
-                            class="border-[1px] border-primary relative z-20 overflow-hidden text-primary bg-primary-white cursor-pointer flex gap-1 justify-center md:justify-start items-baseline mt-6 rounded-[32px] px-4 py-2" >
+                            class="border-[1px] border-primary relative z-20 overflow-hidden text-primary bg-primary-white cursor-pointer flex gap-1 justify-center md:justify-start items-baseline mt-6 rounded-[32px] px-4 py-2">
                             Download resume
                             <div
-                            class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
-                            <div class="text-lg translate-y-[2px]">
-                                &#11183;
+                                class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
+                                <div class="text-lg translate-y-[2px]">
+                                    &#11183;
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
                 </div>
@@ -56,7 +56,17 @@
 <script setup>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ref } from 'vue';
 AOS.init();
+
+const personalDetails = ref([
+    {
+        id: 1,
+        label: "GitHub",
+        contact: "https://github.com/LiyanKhanduqji",
+        image: ""
+    }
+])
 </script>
 
 <style scoped>
@@ -95,15 +105,18 @@ AOS.init();
 a {
     z-index: 1;
     transition: 0.3;
-    animation: bounce 1s infinite; 
+    animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-10px); 
+        transform: translateY(-10px);
     }
 }
 

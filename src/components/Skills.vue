@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper py-16" dir="ltr">
+    <div class="wrapper" dir="ltr">
         <div class="carousel">
             <div v-for="(svgPath, index) in svgPaths" :key="index" class="text-center">
                 <div class="h-12 w-28">
@@ -39,7 +39,7 @@ $(document).ready(() => {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 100,
         dots: true,
         arrows: false,
     });

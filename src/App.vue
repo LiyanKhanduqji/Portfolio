@@ -6,7 +6,6 @@ const ServicesSection = defineAsyncComponent(() => import('@/components/Services
 const AboutSection = defineAsyncComponent(() => import('@/components/AboutSection.vue'));
 const ExperianceAndSkills = defineAsyncComponent(() => import('@/components/ExperianceAndSkills.vue'));
 const LatestProjects = defineAsyncComponent(() => import('@/components/LatestProjects.vue'));
-const ContactSection = defineAsyncComponent(() => import('@/components/ContactSection.vue'));
 const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'));
 const BackToTop = defineAsyncComponent(() => import('@/components/BackToTop.vue'));
 </script>
@@ -21,7 +20,6 @@ const BackToTop = defineAsyncComponent(() => import('@/components/BackToTop.vue'
       <AboutSection />
       <ExperianceAndSkills />
       <LatestProjects />
-      <ContactSection />
       <Footer />
       <BackToTop />
     </div>

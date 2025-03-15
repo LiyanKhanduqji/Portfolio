@@ -1,16 +1,8 @@
 <template>
     <section class="text-white mt-20" id="projects">
         <div class="container mx-auto">
-            <div class="mb-4 md:flex md:justify-between xl:pr-16">
-                <h2 class="text-4xl font-bold text-white"> My Latest Projects</h2>
-                <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
-                    <button class="hover:text-primary" v-for="category in ['all', 'web development', 'Mobile App']"
-                        :key="category" @click="() => selectedCategory = category">
-                        {{ category }}
-                    </button>
-                </div>
-            </div>
-            <ul class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+                <h2 class="text-4xl font-bold text-white mb-20" data-aos="flip-up"> My Latest Projects</h2>
+            <ul class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
                 data-aos="fade-right">
                 <div v-for="project in filteredProjects" :key="project.id">
                     <div class="h-52 md:h-[24rem] rounded-t-xl relative group"
