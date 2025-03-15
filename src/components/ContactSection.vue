@@ -2,8 +2,7 @@
         <div class="container mx-auto pt-6">
             <div class="flex items-center justify-start gap-4 flex-wrap">
                 <div v-for="element in contactInfo" :key="element.id">
-                    <div class="flex items-center justify-start gap-3 flex-1"
-                        data-aos="zoom-out" data-aos-delay="200">
+                    <div class="flex items-center justify-start gap-3 flex-1">
                         <span class="bg-primary bg-opacity-30 p-2 flex items-center justify-center rounded-full">
                             <img :src="element.image" :alt="element.label" width="10">
                         </span>
