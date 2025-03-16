@@ -44,7 +44,7 @@
                         </div>
                         <div
                             class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 rounded-full shadow-lg border border-primary">
-                            <img src="@/assets/Liyan.jpeg" alt="Hero pic" width="500" height="auto" loading="lazy"
+                            <img :src="heroImg" alt="Hero pic" width="500" height="auto" loading="lazy"
                                 class="w-full h-full rounded-full object-cover">
                         </div>
                     </div>
@@ -54,6 +54,7 @@
     </section>
 </template>
 <script setup>
+import heroImg from '@/assets/Liyan.PNG';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ref } from 'vue';

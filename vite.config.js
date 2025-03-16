@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf', '**/*.gif'],
+  assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf', '**/*.gif', '**/*.PNG'],
   plugins: [vue()],
   resolve:{
     alias: {
