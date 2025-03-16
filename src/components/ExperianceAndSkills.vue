@@ -1,6 +1,6 @@
 <template>
     <section class="text-white mt-20" id="skills">
-        <div class="absolute right-0 top-[110rem] h-full w-full justify-end">
+        <div class="absolute right-0 top-[110rem] max-h-full w-full justify-end">
             <span class="flex justify-end me-10 opacity-20">
                 <span class="w-16 h-32 rounded-l-full flex bg-primary blur-2xl"></span>
                 <span class="w-16 h-32 rounded-r-full flex bg-[#f88fc2] blur-2xl mt-14"></span>
